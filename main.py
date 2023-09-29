@@ -72,7 +72,7 @@ class UnreviewedToMaster:
 
     def __load_workbook(self, file_path: str) -> Workbook:
         """Loads an excel file for processing"""
-        wb = load_workbook(file_path, rich_text=True)
+        wb = load_workbook(file_path)
 
         return wb
 
@@ -97,7 +97,7 @@ class UnreviewedToMaster:
                 header_skipped = True 
                 continue
 
-            values = [cell.value for cell in row]
+            values = [cell.internal_value for cell in row]
 
             qualified, notes = values[self.qualified_row], values[self.notes_row]
 
@@ -133,10 +133,11 @@ class UnreviewedToMaster:
     
     def __save_input_file(self, wb: Workbook, filepath: str, original_file: str) -> None:
         """Saves the input file"""
-        if os.path.isfile(original_file):
-            os.remove(original_file)
-
         wb.save(filepath)
+
+        wb.close()
+        
+        os.remove(original_file) if os.path.isfile(original_file) else ""
 
     def run(self) -> None:
         """Entry point to the unreviewed rows processor"""
@@ -154,7 +155,9 @@ class UnreviewedToMaster:
             file_path = file.replace(".xlsx", f"{extension}.xlsx")
 
             self.__save_input_file(wb, file_path, file)
-        
+
+        self.master_wb.close()
+
         self.logger.info("Done.")
 
 if __name__ == "__main__":

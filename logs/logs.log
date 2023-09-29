@@ -1,6 +1,23 @@
 UnreviewedToMaster:INFO - *****UnreviewedToMaster started*****
 UnreviewedToMaster:INFO - Reading the input path...
-UnreviewedToMaster:INFO - 0 input files found.
+UnreviewedToMaster:INFO - 9 input files found.
 UnreviewedToMaster:INFO - Reading the master file path...
 UnreviewedToMaster:INFO - Processing input files...
+UnreviewedToMaster:INFO - Processing file >> ./input/results_2023_09_19_13.7.xlsx
+UnreviewedToMaster:INFO - Rows added to master: 2
+UnreviewedToMaster:INFO - Processing file >> ./input/results_2023_09_21_56_filtered.52.xlsx
+UnreviewedToMaster:INFO - Processing file >> ./input/results_2023_09_21_60_filtered.56.xlsx
+UnreviewedToMaster:INFO - Rows added to master: 1
+UnreviewedToMaster:INFO - Processing file >> ./input/results_2023_09_21_61_filtered.57.xlsx
+UnreviewedToMaster:INFO - Rows added to master: 2
+UnreviewedToMaster:INFO - Processing file >> ./input/results_2023_09_21_62_filtered.58.xlsx
+UnreviewedToMaster:INFO - Rows added to master: 1
+UnreviewedToMaster:INFO - Processing file >> ./input/results_2023_09_24_04.59.xlsx
+UnreviewedToMaster:INFO - Rows added to master: 1
+UnreviewedToMaster:INFO - Processing file >> ./input/results_2023_09_24_31_filtered.86.xlsx
+UnreviewedToMaster:INFO - Rows added to master: 1
+UnreviewedToMaster:INFO - Processing file >> ./input/results_2023_09_24_32_filtered.87.xlsx
+UnreviewedToMaster:INFO - Rows added to master: 8
+UnreviewedToMaster:INFO - Processing file >> ./input/results_2023_09_26_01_filtered.89.xlsx
+UnreviewedToMaster:INFO - Rows added to master: 3
 UnreviewedToMaster:INFO - Done.
